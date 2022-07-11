@@ -1,7 +1,6 @@
 import React from 'react';
 import './MapDemo.css';
 import data from './data/products.json';
-import './MapDemo.css';
 
 const TsetMap = () => {
     return (

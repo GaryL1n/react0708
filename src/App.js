@@ -1,18 +1,12 @@
-import { useState } from 'react';
+import React from 'react';
+import Homework3 from './Homework3';
 
-function App() {
-    // useState(0) => [getter, setter]
-    const [total, setTotal] = useState(0);
-    
+const App = () => {
     return (
-        <h1
-            onClick={() => {
-                setTotal(total + 1);
-            }}
-        >
-            {total}
-        </h1>
+        <>
+            <Homework3 />
+        </>
     );
-}
+};
 
 export default App;

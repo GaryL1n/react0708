@@ -1,10 +1,10 @@
 import React from 'react';
-import Member from './Member';
+import Parent from './ex0712-2/Parent';
 
 const App = () => {
     return (
         <>
-            <Member />
+            <Parent />
         </>
     );
 };

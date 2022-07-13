@@ -1,10 +1,11 @@
 import React from 'react';
-import ReactModal from './ReactModal/ReactModal';
+import ModalDad from './BtModal/ModalDad';
+
 
 const App = () => {
     return (
         <>
-            <ReactModal />
+            <ModalDad />
         </>
     );
 };

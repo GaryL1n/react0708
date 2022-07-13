@@ -22,37 +22,42 @@ const ModalKid = (props) => {
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
             >
-                <Modal.Header closeButton>
+                <Modal.Header closeButton className="modalhead">
                     <Modal.Title id="contained-modal-title-vcenter">
                         會員資料
                     </Modal.Title>
+                    <Button className="btbt" onClick={props.onHide}>
+                        Close
+                    </Button>
                 </Modal.Header>
-                <Modal.Body>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>sid</th>
-                                    <th>Name</th>
-                                    <th>Creat</th>
-                                    <th>Avatar</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {member.map((v, i) => {
-                                    return (
-                                        <tr key={v.sid}>
-                                            <td>{v.sid}</td>
-                                            <td>{v.mem_name}</td>
-                                            <td>{v.mem_created_at}</td>
-                                            <td>{v.mem_avatar}</td>
-                                        </tr>
-                                    );
-                                })}
-                            </tbody>
-                        </table>
+                <Modal.Body className="modalbody">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>sid</th>
+                                <th>Name</th>
+                                <th>Creat</th>
+                                <th>Avatar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {member.map((v, i) => {
+                                return (
+                                    <tr key={v.sid}>
+                                        <td>{v.sid}</td>
+                                        <td>{v.mem_name}</td>
+                                        <td>{v.mem_created_at}</td>
+                                        <td>{v.mem_avatar}</td>
+                                    </tr>
+                                );
+                            })}
+                        </tbody>
+                    </table>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={props.onHide}>Close</Button>
+                    <Button className="btbt" onClick={props.onHide}>
+                        Close
+                    </Button>
                 </Modal.Footer>
             </Modal>
         </>

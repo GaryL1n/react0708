@@ -9,7 +9,10 @@ td, th {
   padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2;}
+/* tr:nth-child(even){background-color: #f2f2f2;} */
+tr {
+  color: white;
+}
 
 tr:hover {background-color: #ddd;}
 
@@ -17,6 +20,24 @@ th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #04AA6D;
+  background-color: gray;
   color: white;
+}
+
+.btn-close{
+  display: none;
+}
+
+.modalhead {
+  color: white;
+  background-color: black;
+}
+
+.modalbody {
+  background-color: black;
+}
+
+.btbt {
+  color: black;
+  background-color: white;
 }

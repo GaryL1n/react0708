@@ -24,7 +24,7 @@ const CarouselTry = () => {
                 thumbWidth="0px"
                 infiniteLoop="true"
                 autoPlay="true"
-                interval="3000"
+                interval="1000"
                 showThumbs=""
                 showIndicators="true"
                 showStatus=""

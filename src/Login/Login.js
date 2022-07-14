@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 // 文字動畫
 import Texty from 'rc-texty';
 import 'rc-texty/assets/index.css';
+// 進出場動畫
+import QueueAnim from 'rc-queue-anim';
 // 輪播牆
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
@@ -9,7 +11,6 @@ import './Login.scss';
 import './Btn8.scss';
 
 const Login = () => {
-
     return (
         <>
             <div className="container-fluid vh-100">
@@ -60,10 +61,15 @@ const Login = () => {
                                 </div>
                             </Carousel>
                         </div>
-                        <div className="col-12 col-xl-6 h-100 d-flex justify-content-center LoginInputs">
+                        <div className="col-12 col-xl-6 h-100 d-flex justify-content-center LoginInputsBox">
                             <div className="h-100">
                                 <div className="LoginLogoBox pt-3">
-                                    <Texty className="text-center LoginLogoBoxText">
+                                    <Texty
+                                        className="text-center LoginLogoBoxText"
+                                        delay={600}
+                                        interval={200}
+                                        repeat={-1}
+                                    >
                                         Login
                                     </Texty>
                                 </div>

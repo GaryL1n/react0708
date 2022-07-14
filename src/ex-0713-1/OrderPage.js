@@ -41,6 +41,7 @@ function OrderPage() {
     // 多樣產品用的共同狀態
     const [productsInOrder, setProductsInOrder] = useState(initState(products));
 
+    // 總數量
     const calcTotalNumber = () => {
         let total = 0;
 
@@ -51,6 +52,7 @@ function OrderPage() {
         return total;
     };
 
+    // 總價
     const calcTotalPrice = () => {
         let total = 0;
 

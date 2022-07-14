@@ -28,6 +28,17 @@ function OrderList(props) {
                             key={v.id}
                             {...v}
                             //count={v.count} 因為v裡已有count屬性
+                            removeItem={() => {
+                                // 1. 從目前的狀態拷貝出一個新的變數值(陣列/物件)
+                                // 2. 在新的變數值(陣列/物件)上作處理
+                                const newProductsInOrder =
+                                    productsInOrder.filter((v2, i2) => {
+                                        return v.id !== v2.id;
+                                    });
+
+                                // 3. 設定回原本的狀態中
+                                setProductsInOrder(newProductsInOrder);
+                            }}
                             setCount={(newCount) => {
                                 // 1. 從目前的狀態拷貝出一個新的變數值(陣列/物件)
                                 // 2. 在新的變數值(陣列/物件)上作處理
@@ -65,14 +76,14 @@ function OrderList(props) {
                     /*
             const { id, name, category, image, price } = v
             return (
-              <ProductItem
+            <ProductItem
                 key={id}
                 id={id}
                 name={name}
                 category={category}
                 image={image}
                 price={price}
-              />
+            />
             )
           */
                 })}

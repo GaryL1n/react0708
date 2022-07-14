@@ -1,22 +1,7 @@
-ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-ul li a{
-  text-decoration: none;
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
-ul li a:hover{
-  background-color: red;
-  color: #fff;
-}
-
-.active{
-  background-color: red;
-  color: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }

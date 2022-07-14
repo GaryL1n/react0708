@@ -1,0 +1,111 @@
+.NavBar {
+    height: 80px;
+    color: white;
+    font-size: 3.5rem;
+    background-color: #2D2D2D;
+}
+
+.LoginBox {
+    position: absolute;
+    top: 80px;
+    height: calc(100vh - 80px);
+}
+
+.cursorpointer {
+    cursor: pointer;
+}
+
+.LoginCarousel {
+    display: none;
+}
+
+.LoginCarouselimgBox {
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.LoginInputs {
+    color: white;
+    background: #555555;
+    background: -moz-linear-gradient(left, #555555 0%, #2D2D2D 50%, #2D2D2D 100%);
+    background: -webkit-linear-gradient(left, #555555 0%, #2D2D2D 50%, #2D2D2D 100%);
+    background: linear-gradient(to right, #555555 0%, #2D2D2D 50%, #2D2D2D 100%);
+    .LoginLogoBox {
+        height: 15%;
+        .LoginLogoBoxText {
+            font-size: 3rem;
+            font-weight: 600;
+            text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, black 0px 0px 20px, gray 0px 0px 30px, black 0px 0px 40px, gray 0px 0px 50px, gray 0px 0px 75px;
+        }
+    }
+    .LoginForm {
+        height: 65%;
+        .LoginFormBox {
+            margin-bottom: 0;
+        }
+        .LoginFormAccountPassword {
+            font-size: 1.5rem;
+        }
+        input {
+            font-size: 1.2rem;
+            border: 1px solid white;
+            border-radius: 25px;
+            background-color: #ffffffcf;
+        }
+        .LoginSignUp {
+            margin-top: 0;
+        }
+    }
+    .ForgotAdmin {
+        font-size: 1.5rem;
+    }
+
+    .ForgotAdmin p:nth-child(1):hover {
+        font-weight: 600;
+        font-size: 2rem;
+        text-shadow: 2px 2px 0px #CE0000;
+    }
+
+    .ForgotAdmin p:nth-child(2):hover {
+        font-weight: 600;
+        font-size: 2rem;
+        text-shadow: 2px 2px 0px #CE0000;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .NavBar{
+        height: 88px;
+    }
+    .LoginBox{
+        display: flex;
+        top: 88px;
+        height: calc(100% - 88px);
+    }
+    .LoginCarousel {
+        display: block;
+    }
+    .LoginInputs {
+        .LoginLogoBox {
+            height: 18%;
+            .LoginLogoBoxText {
+                font-size: 5rem;
+            }
+        }
+        .LoginForm {
+            .LoginFormBox {
+                margin-bottom: 40px;
+            }
+            .LoginFormAccountPassword {
+                font-size: 1.8rem;
+            }
+            input {
+                height: 50px;
+                width: 50%;
+            }
+            .LoginSignUp {
+                margin-top: 35px;
+            }
+        }
+    }
+}

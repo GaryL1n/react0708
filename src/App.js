@@ -1,10 +1,11 @@
 import React from 'react';
-import ModalDad from './Components/Modal/BtModal/ModalDad';
+import './App.css';
+import Login from './Login/Login';
 
 const App = () => {
     return (
         <>
-            <ModalDad />
+            <Login />
         </>
     );
 };

@@ -24,6 +24,7 @@ const Login = () => {
                                 autoPlay="true"
                                 interval="3000"
                                 axis="horizontal"
+                                stopOnHover=""
                                 showThumbs=""
                                 showIndicators=""
                                 showStatus=""

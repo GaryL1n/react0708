@@ -13,8 +13,10 @@ const SeePassword = () => {
 
     return (
         <>
-            <input type={password ? 'text' : 'password'} />
-            <button onClick={seePassword}>See Password</button>
+            <div className="d-flex justify-content-center">
+                <input type={password ? 'text' : 'password'} />
+                <button onClick={seePassword}>See Password</button>
+            </div>
         </>
     );
 };

@@ -6,10 +6,21 @@ const ModalDad = () => {
     const [modalShow, setModalShow] = useState(false);
     return (
         <>
-            <Button variant="primary" onClick={() => setModalShow(true)}>
-                會員資料表
-            </Button>
-            <ModalKid show={modalShow} onHide={() => setModalShow(false)} />
+            <div className="d-flex">
+                <div className="col-4 bg-success"></div>
+                <div className="col-8 bg-warning">
+                    <Button
+                        variant="primary"
+                        onClick={() => setModalShow(true)}
+                    >
+                        會員資料表
+                    </Button>
+                    <ModalKid
+                        show={modalShow}
+                        onHide={() => setModalShow(false)}
+                    />
+                </div>
+            </div>
         </>
     );
 };

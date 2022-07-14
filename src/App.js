@@ -1,10 +1,10 @@
 import React from 'react';
-import OrderPage from './ex-0713-1/OrderPage';
+import ModalDad from './Components/Modal/BtModal/ModalDad';
 
 const App = () => {
     return (
         <>
-            <OrderPage />
+            <ModalDad />
         </>
     );
 };

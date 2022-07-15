@@ -82,21 +82,26 @@
     .LoginInputsBox {
         background: linear-gradient(to right, #555555 0%, #2D2D2D 50%, #2D2D2D 100%);
         .LoginLogoBox {
-            height: 18%;
+            height: 15%;
             .LoginLogoBoxText {
-                font-size: 5rem;
+                font-size: 3rem;
             }
         }
         .LoginForm {
+            margin-bottom: 35px;
             .LoginFormBox {
                 margin-bottom: 40px;
             }
             .LoginFormAccountPassword {
-                font-size: 1.8rem;
+                font-size: 1.2rem;
             }
             input {
-                height: 50px;
-                width: 50%;
+                height: 30px;
+                width: 40%;
+            }
+            .FbLineGoogle {
+                margin-left: 10%;
+                width: 80%;
             }
             .LoginSignUp {
                 margin-top: 35px;

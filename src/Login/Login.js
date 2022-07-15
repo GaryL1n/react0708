@@ -142,7 +142,7 @@ const Login = () => {
                                         </div>
                                     </div>
                                 </form>
-                                <div className="d-flex mt-3 ForgotAdmin">
+                                <div className="d-flex  ForgotAdmin pt-4">
                                     <div className="col-6 d-flex justify-content-center">
                                         <p className="cursorpointer">Forgot?</p>
                                     </div>
